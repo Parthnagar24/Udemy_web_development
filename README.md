@@ -1,7 +1,7 @@
 # Udemy_web_development
 Web Development 
 
-Here's a clear and beginner-friendly explanation of each of the HTML elements you listed, along with their **purpose, use, and syntax**.
+Here's a clear and beginner-friendly explanation of each of the HTML elements  listed, along with their **purpose, use, and syntax**.
 
 ---
 
