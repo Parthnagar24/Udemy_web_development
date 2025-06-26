@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌐 Complete Web Development Bootcamp Repository
 
 Welcome to the repository for my journey through the **Complete Web Development Course** on Udemy! This course is a full-stack, project-based learning experience that covers everything from the basics of HTML to advanced backend and AI integrations.
@@ -87,4 +88,8 @@ This course is your all-in-one guide to becoming a **Full Stack Web Developer**.
 url : https://developer.mozilla.org/en-US/docs/Web/HTML
 url : https://www.w3schools.com/html/
 
+=======
+# Udemy_web_development
+Web Development 
+>>>>>>> 15167edcd4ef4e0fc2ee810402819b6c8e7fdd20
 
