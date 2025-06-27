@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 🌐 Complete Web Development Bootcamp Repository
 
 Welcome to the repository for my journey through the **Complete Web Development Course** on Udemy! This course is a full-stack, project-based learning experience that covers everything from the basics of HTML to advanced backend and AI integrations.
