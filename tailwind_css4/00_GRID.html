@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Grid Properties Demo</title>
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body class="p-8 bg-gray-100">
+    <!-- grid columns and rows -->
+    <div class="mb-6">
+      <div class="grid grid-cols-2 gap-2 bg-blue-200 p-2 mb-2">
+        <div class="bg-blue-500 text-white px-3 py-2 rounded">col 1</div>
+        <div class="bg-blue-500 text-white px-3 py-2 rounded">col 2</div>
+      </div>
+      <div class="grid grid-cols-3 gap-2 bg-blue-200 p-2 mb-2">
+        <div class="bg-blue-500 text-white px-3 py-2 rounded">col 1</div>
+        <div class="bg-blue-500 text-white px-3 py-2 rounded">col 2</div>
+        <div class="bg-blue-500 text-white px-3 py-2 rounded">col 3</div>
+      </div>
+      <div class="grid grid-rows-2 gap-2 bg-blue-200 p-2 mb-2">
+        <div class="bg-blue-500 text-white px-3 py-2 rounded">row 1</div>
+        <div class="bg-blue-500 text-white px-3 py-2 rounded">row 2</div>
+      </div>
+    </div>
+
+    <!-- grid column/row span -->
+    <div class="mb-6">
+      <div class="grid grid-cols-3 gap-2 bg-green-200 p-2 mb-2">
+        <div class="col-span-2 bg-green-500 text-white px-3 py-2 rounded">
+          col-span-2
+        </div>
+        <div class="bg-green-500 text-white px-3 py-2 rounded">col 3</div>
+      </div>
+      <div class="grid grid-rows-3 gap-2 bg-green-200 p-2 mb-2">
+        <div class="row-span-2 bg-green-500 text-white px-3 py-2 rounded">
+          row-span-2
+        </div>
+        <div class="bg-green-500 text-white px-3 py-2 rounded">row 2</div>
+        <div class="bg-green-500 text-white px-3 py-2 rounded">row 3</div>
+      </div>
+    </div>
+
+    <!-- justify-items and align-items -->
+    <div class="mb-6">
+      <div
+        class="grid grid-cols-3 justify-items-start gap-2 bg-yellow-200 p-2 mb-2"
+      >
+        <div class="bg-yellow-500 text-white px-3 py-2 rounded">
+          justify-start
+        </div>
+        <div class="bg-yellow-500 text-white px-3 py-2 rounded">
+          justify-start
+        </div>
+        <div class="bg-yellow-500 text-white px-3 py-2 rounded">
+          justify-start
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-3 justify-items-center gap-2 bg-yellow-200 p-2 mb-2"
+      >
+        <div class="bg-yellow-500 text-white px-3 py-2 rounded">
+          justify-center
+        </div>
+        <div class="bg-yellow-500 text-white px-3 py-2 rounded">
+          justify-center
+        </div>
+        <div class="bg-yellow-500 text-white px-3 py-2 rounded">
+          justify-center
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-3 justify-items-end gap-2 bg-yellow-200 p-2 mb-2"
+      >
+        <div class="bg-yellow-500 text-white px-3 py-2 rounded">
+          justify-end
+        </div>
+        <div class="bg-yellow-500 text-white px-3 py-2 rounded">
+          justify-end
+        </div>
+        <div class="bg-yellow-500 text-white px-3 py-2 rounded">
+          justify-end
+        </div>
+      </div>
+      <div class="grid grid-rows-3 items-end h-32 gap-2 bg-yellow-200 p-2">
+        <div class="bg-yellow-500 text-white px-3 py-2 rounded">items-end</div>
+        <div class="bg-yellow-500 text-white px-3 py-2 rounded">items-end</div>
+        <div class="bg-yellow-500 text-white px-3 py-2 rounded">items-end</div>
+      </div>
+    </div>
+
+    <!-- justify-content and align-content -->
+    <div class="mb-6 h-40">
+      <div
+        class="grid grid-rows-3 grid-flow-col gap-2 h-full bg-pink-200 p-2 mb-2 justify-between"
+      >
+        <div class="bg-pink-500 text-white px-3 py-2 rounded">
+          justify-between
+        </div>
+        <div class="bg-pink-500 text-white px-3 py-2 rounded">
+          justify-between
+        </div>
+        <div class="bg-pink-500 text-white px-3 py-2 rounded">
+          justify-between
+        </div>
+      </div>
+      <div
+        class="grid grid-rows-3 grid-flow-col gap-2 h-full bg-pink-200 p-2 align-content-end"
+      >
+        <div class="bg-pink-500 text-white px-3 py-2 rounded">
+          align-content-end
+        </div>
+        <div class="bg-pink-500 text-white px-3 py-2 rounded">
+          align-content-end
+        </div>
+        <div class="bg-pink-500 text-white px-3 py-2 rounded">
+          align-content-end
+        </div>
+      </div>
+    </div>
+
+    <!-- gap and grid-auto-flow -->
+    <div class="mb-6">
+      <div class="grid grid-cols-3 gap-8 bg-amber-200 p-2 mb-2">
+        <div class="bg-amber-500 text-white px-3 py-2 rounded">gap-8</div>
+        <div class="bg-amber-500 text-white px-3 py-2 rounded">gap-8</div>
+        <div class="bg-amber-500 text-white px-3 py-2 rounded">gap-8</div>
+      </div>
+      <div class="grid grid-flow-col auto-cols-max gap-2 bg-amber-200 p-2">
+        <div class="bg-amber-500 text-white px-3 py-2 rounded">flow-col</div>
+        <div class="bg-amber-500 text-white px-3 py-2 rounded">flow-col</div>
+        <div class="bg-amber-500 text-white px-3 py-2 rounded">flow-col</div>
+      </div>
+    </div>
+
+    <!-- place-items and place-content -->
+    <div class="mb-6 h-40">
+      <div class="grid grid-cols-3 h-full bg-purple-200 p-2 place-items-center">
+        <div class="bg-purple-500 text-white px-3 py-2 rounded">
+          place-items-center
+        </div>
+        <div class="bg-purple-500 text-white px-3 py-2 rounded">
+          place-items-center
+        </div>
+        <div class="bg-purple-500 text-white px-3 py-2 rounded">
+          place-items-center
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-3 h-full bg-purple-200 p-2 place-content-center mt-2"
+      >
+        <div class="bg-purple-500 text-white px-3 py-2 rounded">
+          place-content-center
+        </div>
+        <div class="bg-purple-500 text-white px-3 py-2 rounded">
+          place-content-center
+        </div>
+        <div class="bg-purple-500 text-white px-3 py-2 rounded">
+          place-content-center
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

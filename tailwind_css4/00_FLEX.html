@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Flexbox Properties Demo</title>
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body class="p-8 bg-gray-100">
+    <!-- flex direction -->
+    <div class="mb-6">
+      <div class="flex flex-row gap-2 mb-2 bg-blue-200 p-2">
+        flex-row
+        <div class="bg-blue-500 text-white px-3 py-1 rounded">A</div>
+        <div class="bg-blue-500 text-white px-3 py-1 rounded">B</div>
+        <div class="bg-blue-500 text-white px-3 py-1 rounded">C</div>
+      </div>
+      <div class="flex flex-col gap-2 bg-blue-200 p-2">
+        flex-col
+        <div class="bg-blue-500 text-white px-3 py-1 rounded">A</div>
+        <div class="bg-blue-500 text-white px-3 py-1 rounded">B</div>
+        <div class="bg-blue-500 text-white px-3 py-1 rounded">C</div>
+      </div>
+    </div>
+
+    <!-- justify-content -->
+    <div class="mb-6">
+      <div class="flex justify-start gap-2 bg-green-200 p-2 mb-2">
+        justify-start
+        <div class="bg-green-500 text-white px-3 py-1 rounded">1</div>
+        <div class="bg-green-500 text-white px-3 py-1 rounded">2</div>
+        <div class="bg-green-500 text-white px-3 py-1 rounded">3</div>
+      </div>
+      <div class="flex justify-center gap-2 bg-green-200 p-2 mb-2">
+        justify-center
+        <div class="bg-green-500 text-white px-3 py-1 rounded">1</div>
+        <div class="bg-green-500 text-white px-3 py-1 rounded">2</div>
+        <div class="bg-green-500 text-white px-3 py-1 rounded">3</div>
+      </div>
+      <div class="flex justify-end gap-2 bg-green-200 p-2 mb-2">
+        justify-end
+        <div class="bg-green-500 text-white px-3 py-1 rounded">1</div>
+        <div class="bg-green-500 text-white px-3 py-1 rounded">2</div>
+        <div class="bg-green-500 text-white px-3 py-1 rounded">3</div>
+      </div>
+      <div class="flex justify-between gap-2 bg-green-200 p-2 mb-2">
+        justify-between
+        <div class="bg-green-500 text-white px-3 py-1 rounded">1</div>
+        <div class="bg-green-500 text-white px-3 py-1 rounded">2</div>
+        <div class="bg-green-500 text-white px-3 py-1 rounded">3</div>
+      </div>
+      <div class="flex justify-around gap-2 bg-green-200 p-2 mb-2">
+        justify-around
+        <div class="bg-green-500 text-white px-3 py-1 rounded">1</div>
+        <div class="bg-green-500 text-white px-3 py-1 rounded">2</div>
+        <div class="bg-green-500 text-white px-3 py-1 rounded">3</div>
+      </div>
+      <div class="flex justify-evenly gap-2 bg-green-200 p-2">
+        justify-evenly
+        <div class="bg-green-500 text-white px-3 py-1 rounded">1</div>
+        <div class="bg-green-500 text-white px-3 py-1 rounded">2</div>
+        <div class="bg-green-500 text-white px-3 py-1 rounded">3</div>
+      </div>
+    </div>
+
+    <!-- align-items -->
+    <div class="mb-6 h-24">
+      <div class="flex items-start h-full gap-2 bg-yellow-200 p-2 mb-2">
+        items-start
+        <div class="bg-yellow-500 text-white px-3 py-1 rounded">X</div>
+        <div class="bg-yellow-500 text-white px-3 py-6 rounded">Y</div>
+        <div class="bg-yellow-500 text-white px-3 py-3 rounded">Z</div>
+      </div>
+      <div class="flex items-center h-full gap-2 bg-yellow-200 p-2 mb-2">
+        items-center
+        <div class="bg-yellow-500 text-white px-3 py-1 rounded">X</div>
+        <div class="bg-yellow-500 text-white px-3 py-6 rounded">Y</div>
+        <div class="bg-yellow-500 text-white px-3 py-3 rounded">Z</div>
+      </div>
+      <div class="flex items-end h-full gap-2 bg-yellow-200 p-2">
+        items-end
+        <div class="bg-yellow-500 text-white px-3 py-1 rounded">X</div>
+        <div class="bg-yellow-500 text-white px-3 py-6 rounded">Y</div>
+        <div class="bg-yellow-500 text-white px-3 py-3 rounded">Z</div>
+      </div>
+    </div>
+
+    <!-- flex-wrap -->
+    <div class="mb-6 w-64">
+      <div class="flex flex-wrap gap-2 bg-pink-200 p-2 mb-2">
+        flex-wrap
+        <div class="bg-pink-500 text-white px-8 py-2 rounded">A</div>
+        <div class="bg-pink-500 text-white px-8 py-2 rounded">B</div>
+        <div class="bg-pink-500 text-white px-8 py-2 rounded">C</div>
+        <div class="bg-pink-500 text-white px-8 py-2 rounded">D</div>
+      </div>
+      <div class="flex flex-nowrap gap-2 bg-pink-200 p-2">
+        flex-nowrap
+        <div class="bg-pink-500 text-white px-8 py-2 rounded">A</div>
+        <div class="bg-pink-500 text-white px-8 py-2 rounded">B</div>
+        <div class="bg-pink-500 text-white px-8 py-2 rounded">C</div>
+        <div class="bg-pink-500 text-white px-8 py-2 rounded">D</div>
+      </div>
+    </div>
+
+    <!-- align-self (on children) -->
+    <div class="mb-6 h-24 flex gap-2 bg-purple-200 p-2">
+      <div class="self-start bg-purple-500 text-white px-3 py-1 rounded">
+        self-start
+      </div>
+      <div class="self-center bg-purple-500 text-white px-3 py-6 rounded">
+        self-center
+      </div>
+      <div class="self-end bg-purple-500 text-white px-3 py-3 rounded">
+        self-end
+      </div>
+    </div>
+
+    <!-- flex-grow, flex-shrink, flex-basis -->
+    <div class="mb-6 flex gap-2 bg-gray-300 p-2">
+      <div class="flex-grow bg-gray-700 text-white px-3 py-2 rounded">
+        flex-grow
+      </div>
+      <div class="flex-shrink bg-gray-700 text-white px-3 py-2 rounded w-32">
+        flex-shrink
+      </div>
+      <div class="flex-none bg-gray-700 text-white px-3 py-2 rounded w-32">
+        flex-none
+      </div>
+      <div class="basis-1/4 bg-gray-700 text-white px-3 py-2 rounded">
+        basis-1/4
+      </div>
+    </div>
+
+    <!-- gap -->
+    <div class="mb-6 flex gap-8 bg-amber-200 p-2">
+      <div class="bg-amber-500 text-white px-3 py-2 rounded">gap-8</div>
+      <div class="bg-amber-500 text-white px-3 py-2 rounded">gap-8</div>
+      <div class="bg-amber-500 text-white px-3 py-2 rounded">gap-8</div>
+    </div>
+  </body>
+</html>

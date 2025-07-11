@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+
+  <body class="bg-gray-950 flex items-center justify-center h-screen">
+    <div class="bg-gray-700 p-8 rounded shadow-md flex items-center space-x-6">
+      <div class="w-24 h-24 flex items-center justify-center">
+        <img class="size-20 bg-gray-200" src="./icons8-login-50.png" alt="" />
+      </div>
+
+      <form class="space-y-4">
+        <h2 class="text-lg text-white font-medium underline">
+          Click below to login!
+        </h2>
+
+        <div>
+          <label class="block font-medium text-white">Email ID:</label>
+          <input
+            class="border border-gray-300 p-2 w-64 rounded focus:outline-none focus:ring-2 text-white focus:ring-blue-400"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Email"
+            required
+          />
+        </div>
+
+        <div>
+          <label class="block font-medium text-white">Password:</label>
+          <input
+            type="password"
+            placeholder="Enter password"
+            class="border border-gray-300 p-2 w-64 rounded focus:outline-none focus:ring-2 text-white focus:ring-blue-400"
+            required
+          />
+        </div>
+
+        <button
+          class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+          type="submit"
+        >
+          Login
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML Elements Example</title>
+  </head>
+  <body>
+    <!-- 1. header + hgroup + h1–h6 -->
+    <header>
+      <hgroup>
+        <h1>Welcome to My Website</h1>
+        <h2>Your one-stop tech blog</h2>
+        <h3>Latest in Web Development</h3>
+        <h4>HTML, CSS, JavaScript</h4>
+        <h5>Tips & Tutorials</h5>
+        <h6>Updated Weekly</h6>
+      </hgroup>
+    </header>
+
+    <!-- 2. nav + a + ul + li -->
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- 3. section + article + p + img -->
+    <section id="blog">
+      <article>
+        <h2>How to Learn HTML</h2>
+        <p>
+          HTML is the foundation of every web page. It's used to structure
+          content and elements.
+        </p>
+        <img src="https://via.placeholder.com/150" alt="HTML Example Image" />
+      </article>
+    </section>
+
+    <!-- 4. table + tr + th + td -->
+    <section>
+      <h2>Course Schedule</h2>
+      <table border="1">
+        <tr>
+          <th>Day</th>
+          <th>Topic</th>
+        </tr>
+        <tr>
+          <td>Monday</td>
+          <td>HTML Basics</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>CSS Styling</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- 5. form + label + input + button -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form action="/submit" method="POST">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="username" required /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="useremail" required /><br /><br />
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- 6. footer -->
+    <footer>
+      <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
