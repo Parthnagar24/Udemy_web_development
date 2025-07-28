@@ -1,0 +1,5 @@
+console.log("5" + 3); // "53" (number to string)
+console.log("5" - 3); // 2 (string to number)
+console.log(true + 1); // 2 (boolean to number)
+console.log("" == 0); // true (loose equality)
+console.log("" === 0); // false (strict equality)
