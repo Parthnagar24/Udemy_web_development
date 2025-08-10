@@ -1,0 +1,21 @@
+/* Custom calculator button styles */
+.btn {
+  @apply p-4 text-xl font-semibold text-gray-700 rounded-2xl bg-white shadow-sm hover:bg-gray-100 active:scale-95 transition duration-150 ease-in-out;
+}
+
+.btn.bg-red-400,
+.btn.bg-yellow-400,
+.btn.bg-indigo-500,
+.btn.bg-orange-400,
+.btn.bg-pink-400,
+.btn.bg-green-500 {
+  @apply text-white shadow-md;
+}
+
+.btn[data-action="calculate"] {
+  @apply text-2xl font-bold;
+}
+
+.display {
+  @apply w-full mb-4 text-right text-3xl p-4 border border-gray-300 rounded-2xl bg-gray-50 font-mono shadow-inner focus:outline-none;
+}

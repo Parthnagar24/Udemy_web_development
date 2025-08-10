@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scientific Calculator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-purple-300 to-blue-200 min-h-screen flex items-center justify-center font-sans">
+
+  <div class="calculator bg-white shadow-2xl rounded-2xl p-6 w-[360px]">
+    <input 
+      type="text" 
+      id="display" 
+      class="display w-full mb-4 text-right text-3xl p-4 border rounded-xl bg-gray-100 font-mono" 
+      placeholder="0" 
+      disabled 
+    />
+
+    <div class="buttons grid grid-cols-4 gap-4">
+      <button class="btn bg-red-400 text-white" data-action="clear">C</button>
+      <button class="btn bg-yellow-400 text-white" data-action="delete">DEL</button>
+      <button class="btn bg-indigo-500 text-white" data-func="sin">sin</button>
+      <button class="btn bg-indigo-500 text-white" data-func="cos">cos</button>
+
+      <button class="btn bg-indigo-500 text-white" data-func="tan">tan</button>
+      <button class="btn bg-indigo-500 text-white" data-func="log">log</button>
+      <button class="btn bg-indigo-500 text-white" data-func="sqrt">√</button>
+      <button class="btn bg-indigo-500 text-white" data-func="square">x²</button>
+
+      <button class="btn" data-value="7">7</button>
+      <button class="btn" data-value="8">8</button>
+      <button class="btn" data-value="9">9</button>
+      <button class="btn bg-orange-400 text-white" data-value="/">/</button>
+
+      <button class="btn" data-value="4">4</button>
+      <button class="btn" data-value="5">5</button>
+      <button class="btn" data-value="6">6</button>
+      <button class="btn bg-orange-400 text-white" data-value="*">*</button>
+
+      <button class="btn" data-value="1">1</button>
+      <button class="btn" data-value="2">2</button>
+      <button class="btn" data-value="3">3</button>
+      <button class="btn bg-orange-400 text-white" data-value="-">-</button>
+
+      <button class="btn col-span-1" data-value="0">0</button>
+      <button class="btn" data-value=".">.</button>
+      <button class="btn bg-pink-400 text-white" data-func="pi">π</button>
+      <button class="btn bg-orange-400 text-white" data-value="+">+</button>
+
+      <button class="btn bg-pink-400 text-white" data-func="e">e</button>
+      <button class="btn bg-green-500 text-white col-span-3" data-action="calculate">=</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
