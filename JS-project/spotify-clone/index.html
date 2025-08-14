@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Your favourite music is here!!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0c8beb3b07.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li class="brand">
+                <img src="logo.png" alt="Spotify">
+                Spotify
+            </li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <div class="songList">
+            <h1>Best of NCS - No Copyright Sounds</h1>
+            <div class="songItemContainer">
+                <!-- Song Items -->
+                <div class="songItem">
+                    <img src="cover1.jpg" alt="Indian Bollywood instruments">
+                    <div class="songDetails">
+                        <span class="title">Indian Bollywood instruments</span>
+                        <span class="time">05:34</span>
+                    </div>
+                    <i id="0" class="songItemPlay fa-solid fa-circle-play"></i>
+                </div>
+
+                <div class="songItem">
+                    <img src="cover2.jpeg" alt="Mashala">
+                    <div class="songDetails">
+                        <span class="title">Mashala - Tiger Zinda Hai</span>
+                        <span class="time">05:34</span>
+                    </div>
+                    <i id="1" class="songItemPlay fa-solid fa-circle-play"></i>
+                </div>
+
+                <div class="songItem">
+                    <img src="cover3.jpeg" alt="Aja Nachle">
+                    <div class="songDetails">
+                        <span class="title">Aja Nachle</span>
+                        <span class="time">05:34</span>
+                    </div>
+                    <i id="2" class="songItemPlay fa-solid fa-circle-play"></i>
+                </div>
+
+                <div class="songItem">
+                    <img src="cover4.jpeg" alt="Tip-Tip Barsa Pani">
+                    <div class="songDetails">
+                        <span class="title">Tip-Tip Barsa Pani</span>
+                        <span class="time">05:34</span>
+                    </div>
+                    <i id="3" class="songItemPlay fa-solid fa-circle-play"></i>
+                </div>
+
+                <div class="songItem">
+                    <img src="cover5.jpeg" alt="Panchayat Title Track">
+                    <div class="songDetails">
+                        <span class="title">Panchayat Title Track</span>
+                        <span class="time">05:34</span>
+                    </div>
+                    <i id="4" class="songItemPlay fa-solid fa-circle-play"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Player -->
+    <div class="bottom">
+        <input type="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <i id="previous" class="fa-solid fa-backward"></i>
+            <i id="masterPlay" class="fa-solid fa-circle-play"></i>
+            <i id="next" class="fa-solid fa-forward"></i>
+        </div>
+        <div class="songInfo">
+            <img src="Music Lines Gif.gif" width="42" alt="" id="gif">
+            <span id="currentSong">Let me love you - Justin Bieber</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

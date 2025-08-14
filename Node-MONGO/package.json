@@ -1,0 +1,21 @@
+{
+  "name": "Node-MONGO",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.14.0",
+  "devDependencies": {
+    "@types/express": "~4.17.23",
+    "@types/node": "^24.2.1"
+  },
+  "dependencies": {
+    "mongoose": "^8.17.1"
+  }
+}
